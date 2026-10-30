@@ -177,12 +177,14 @@ header {
         }
 
         header .search .ti,
-        header .cart .ti {
+        header .cart .ti,
+        .mobile-nav .ti {
             color:var(--hex-header);
             font-size:18px;
         }
 
-    header .cart {
+    header .cart,
+    .mobile-nav {
         position:relative;
         width:33px;
         height:33px;
@@ -208,6 +210,8 @@ header {
             justify-content:center;
             font-size:0.7rem;
         }
+
+    .mobile-nav {display:none;}
 
     nav {
         display: flex;
@@ -966,9 +970,11 @@ footer::before {
         padding:0px;
         justify-content: center;
     }
+    .mobile-nav {display:flex;}
 
     header .search input,
-    aside.filters {
+    aside.filters,
+    header nav {
         display:none;
     }
 
@@ -1045,8 +1051,6 @@ footer::before {
 main.main-base {
     padding:60px 20px 195px 20px;
 }
-
-
 
     .product-single,
     .cart,
