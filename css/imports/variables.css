@@ -1,0 +1,43 @@
+:root {
+    /* colours */
+    --hex-text:#000000;
+    --rgb-text:0, 0, 0;
+    --hex-border:#D8CCBB;
+    --hex-header:#A35D01;
+    --hex-beige:#FFF7EB;
+    --hex-dark-beige:#F5EBDC;
+    --hex-green: #CBCC6F;
+    --rgb-green: 203, 204, 111;
+    --hex-blue-light:#A1C9ED;
+    --hex-blue-medium:#7AA6CE;
+    --hex-blue-dark:#6B98C1;
+    --hex-blue-footer:#46729A;
+
+    /* typography */
+    --text-body:'Inter', sans-serif;
+    --text-heading:'Young Serif', serif;
+
+    /* styling */
+    --box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.filters .pc-black {background:#000000;}
+.filters .pc-white {background:#FFFFFF;}
+.filters .pc-green {background:#4ab538;}
+.filters .pc-blue {background:#2ba7d1;}
+.filters .pc-red {background:#ba3939;}
+.filters .pc-yellow {background:#d6ce35;}
+
+.pc-lightgreen {background:#ADAA53;}
+.pc-olive {background:#766949;}
+.pc-blue {background:#45626E;}
+.pc-red {background:#854242;}
+.pc-darkgrey {background:#3D3D3D;}
+.pc-lightgrey {background:#686868;}
+.pc-brightred {background:#D20000;}
+.pc-orange {background:#D06F00;}
+.pc-brightblue {background:#0179B5;}
+.pc-hvizgreen {background:#27981A;}
+.pc-hvizred {background:#DA351F;}
+.pc-darkgreen {background:#2F622F;}
+.pc-black {background:#242426;}
