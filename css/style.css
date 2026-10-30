@@ -271,6 +271,18 @@ section.intro {
         outline:10px solid var(--hex-blue-light);
     }
 
+        .intro-img-raindrops::before {
+            content:'';
+            position: absolute;
+            top:-18px;
+            right:-30px;
+            width:100px;
+            height:118px;
+            background-image: url('../vectors/raindrops.svg');
+            background-position: center center;
+            background-size: cover;
+        }
+
     .intro-text {
         max-width:720px;
         display:flex;
