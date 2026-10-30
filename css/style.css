@@ -227,13 +227,10 @@ header {
 /* main */
 main {
     margin:60px auto 0px auto;
-    max-width:1440px;
-    border-left:1px solid var(--hex-border);
-    border-right:1px solid var(--hex-border);
-    box-shadow: var(--box-shadow);
 }
 
 main.main-base {
+    max-width:1440px;
     padding:60px 60px 195px 60px;
 }
 
@@ -257,6 +254,7 @@ section.intro {
 
     .intro-img {
         height:100%;
+        padding-left:max(0px, calc(50% - 720px));
         display:flex;
         align-items:center;
         justify-content:center;
@@ -274,6 +272,7 @@ section.intro {
     }
 
     .intro-text {
+        max-width:720px;
         display:flex;
         flex-direction:column;
         gap:10px;
@@ -287,7 +286,9 @@ section.intro {
 
 .new-arrivals-slider {
     width:calc(100% - 80px);
+    max-width:1360px;
     margin:0px auto 40px auto;
+    max-width:1360px;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -368,7 +369,10 @@ section.intro {
     .listing-hero-img {
         width:100%;
         height:270px;
-        clip-path: path("M1440 236.67L1405.6 243.862C1371.2 251.054 1302.4 265.438 1233.92 255.05C1165.28 244.661 1097.12 209.501 1028.48 214.774C960 220.208 891.2 265.917 822.72 269.753C754.08 273.429 685.92 235.071 617.28 220.208C548.8 205.185 480 213.815 411.521 222.605C342.881 231.396 274.72 240.346 206.08 244.661C137.6 248.976 68.8005 248.337 34.4004 248.177L0 247.857V0H1440V236.67Z");
+        /*clip-path: path("M1440 236.67L1405.6 243.862C1371.2 251.054 1302.4 265.438 1233.92 255.05C1165.28 244.661 1097.12 209.501 1028.48 214.774C960 220.208 891.2 265.917 822.72 269.753C754.08 273.429 685.92 235.071 617.28 220.208C548.8 205.185 480 213.815 411.521 222.605C342.881 231.396 274.72 240.346 206.08 244.661C137.6 248.976 68.8005 248.337 34.4004 248.177L0 247.857V0H1440V236.67Z");*/
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 270' preserveAspectRatio='none'%3E%3Cpath d='M1440 236.67L1405.6 243.862C1371.2 251.054 1302.4 265.438 1233.92 255.05C1165.28 244.661 1097.12 209.501 1028.48 214.774C960 220.208 891.2 265.917 822.72 269.753C754.08 273.429 685.92 235.071 617.28 220.208C548.8 205.185 480 213.815 411.521 222.605C342.881 231.396 274.72 240.346 206.08 244.661C137.6 248.976 68.8005 248.337 34.4004 248.177L0 247.857V0H1440V236.67Z'/%3E%3C/svg%3E");
+        mask-size:100% 100%;
+        mask-repeat:no-repeat;
         background-image:url('../images/menswear-hero.jpg');
         background-size:cover;
         background-position: center center;
@@ -377,15 +381,16 @@ section.intro {
 
     .listing-hero-text {
         margin:40px auto;
-        max-width:50vw;
+        max-width:min(50vw, 720px);
         min-width:500px;
     }
 
 /* section products-listing */
 .products-listing {
     position:relative;
-    margin:0px 60px;
-    padding:0px 0px 175px 0px;
+    max-width:1440px;
+    margin:auto;
+    padding:0px 60px 175px 60px;
     display:grid;
     /*grid-template-columns:300px 1fr;*/
     grid-template-columns: minmax(300px, auto) minmax(min-content, 1fr);
@@ -921,7 +926,7 @@ footer::before {
         height: 175px;
         width: 100%;
         background-position: top center;
-        background-size: cover;
+        background-size: max(100%, 1440px) 175px;
     }
 
 footer::before {width:100vw;}
