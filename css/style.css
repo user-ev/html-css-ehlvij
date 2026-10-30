@@ -556,7 +556,8 @@ section.intro {
                 display:inline-block;
             }
 
-    .new-arrivals .product-text {
+    .new-arrivals .product-text,
+    .new-arrivals .product-text a {
         color:var(--hex-beige);
     }
 
