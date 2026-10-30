@@ -1,6 +1,6 @@
 @import url('imports/variables.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.49/dist/tabler-icons.min.css');
 
 * {
     box-sizing: border-box;
