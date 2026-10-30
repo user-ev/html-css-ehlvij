@@ -36,39 +36,99 @@
     </header>
 
     <main class="main-base">
+        <div class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            /
+            <a href="../menswear.html">Men</a>
+            /
+            <a href="../menswear.html">Jackets</a>
+            /
+            <a href="/">Fleece jacket</a>
+        </div>
+
         <section class="product-single">
 
-            <div class="breadcrumbs">
-                <a href="../index.html">Home</a>
-                /
-                <a href="../menswear.html">Men</a>
-                /
-                <a href="../menswear.html">Jackets</a>
-                /
-                <a href="/">Fleece jacket</a>
-            </div>
 
             <div class="product-single-visual">
-                images
+                <div class="product-img-small-previews">
+                    <div class="product-img-small product-photo product-img">
+                        <img src="../images/jacket-1.png">
+                    </div>
+                    <div class="product-img-small product-photo product-img">
+                        <img src="../images/jacket-1.png">
+                    </div>
+                </div>
+                <div class="product-photo product-photo-large">
+                    <div class="product-label">new</div>
+                    <img src="../images/jacket-1.png">
+                </div>
             </div>
 
             <div class="product-single-info">
-                info here
+                <h1>Fleece jacket</h1>
+                <p>Base layer</p>
+
+                <p class="price">799,-</p>
+
+                Colour:
+                <div class="product-colors">
+                    <div class="pc pc-lightgreen"></div>
+                    <div class="pc pc-olive selected"></div>
+                    <div class="pc pc-blue"></div>
+                    <div class="pc pc-red"></div>
+                </div>
+
+                Size:
+                <div class="product-size">
+                    XS S M L XL
+                </div>
+
+                <a href="#">Size chart</a>
+
+                <a class="button button-cart" href="../cart.html">Add to cart</a>
+                <a href="#"><i class="ti ti-heart"></i></a>
+
+                <p>Free shipping over 2 000 kr.</p>
+
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Details
+                    </summary>
+                    <div class="expand-block-content">
+                        This fleece jacket comes in four nature-inspired colours. It has a zipper at the front and raglan sleeves. With the high collar it is designed to keep you warm all day long. The two large pockets are perfect for collecting trinkets on the way.
+                    </div>
+                </details>
+
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Materials
+                    </summary>
+                    <div class="expand-block-content">
+                        Information about the product's materials.
+                    </div>
+                </details>
+
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Shipping & Returns
+                    </summary>
+                    <div class="expand-block-content">
+                        We offer free shipping over 2 000 kr. We also offer free returns, please contact us if there are any issues with your order.
+                    </div>
+                </details>
             </div>
 
         </section>
 
         
 
-        <section class="products-listing">
-
-            <div class="products-rightside">
-
+        <section class="products-recs">
+            <h4>You may also like</h4>
 
             <!-- products -->
             <div class="products-container">
 
-                <h4>You may also like</h4>
+                
 
                     <!-- product -->
                     <article class="product">
@@ -89,7 +149,7 @@
                         </div>
 
                         <div class="product-text">
-                            <b>Wind jacket</b>
+                            <a href="jacket.html">Wind jacket</a>
                             <span>Windproof outer layer</span>
                             <span class="product-text-price">949,-</span>
                         </div>
@@ -112,7 +172,7 @@
                         </div>
 
                         <div class="product-text">
-                            <b>High visibility coat</b>
+                            <a href="jacket.html">High visibility coat</a>
                             <span>Waterproof outer layer</span>
                             <span class="product-text-price">2 349,-</span>
                         </div>
@@ -137,7 +197,7 @@
                         </div>
 
                         <div class="product-text">
-                            <b>Running jacket</b>
+                            <a href="jacket.html">Running jacket</a>
                             <span>Breathable base layer</span>
                             <span class="product-text-price">599,-</span>
                         </div>
@@ -162,15 +222,13 @@
                         </div>
 
                         <div class="product-text">
-                            <b>Winter jacket</b>
+                            <a href="jacket.html">Winter jacket</a>
                             <span>Warm outer layer</span>
                             <span class="product-text-price">1 499,-</span>
                         </div>
                     </article>
 
                 </div> <!-- products listing -->
-
-            </div> <!-- products rightside -->
         </section>
         
     </main>
