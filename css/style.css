@@ -770,6 +770,14 @@ section.intro {
         flex-direction: column-reverse;
     }
 
+    .cart-complete .subtitle {
+        font-size:0.9rem;
+        font-weight:700;
+        letter-spacing:1.4px;
+        text-transform:uppercase;
+        color:var(--hex-blue-medium);
+    }
+
 /* footer */
 footer {
     background-color: var(--hex-blue-footer);
@@ -895,7 +903,8 @@ footer::before {
         min-width:auto;
     }
 
-    .cart {
+    .cart,
+    .cart-complete {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -906,6 +915,9 @@ footer::before {
 
 /* mobile */
 @media screen and (max-width: 600px) {
+    .listing-hero-text {
+        min-width:80vw;
+    }
     .products-listing {
         margin:0px 20px;
     }
@@ -929,7 +941,8 @@ main.main-base {
     padding:60px 20px 195px 20px;
 }
 
-    .cart {
+    .cart,
+    .cart-complete {
         grid-template-columns: 1fr;
     }
 
