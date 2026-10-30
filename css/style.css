@@ -282,6 +282,7 @@ section.intro {
 /* section: new arrivals */
 .new-arrivals {
     background-color: var(--hex-blue-medium);
+    scroll-margin-top: 100px;
 }
 
 .new-arrivals-slider {
