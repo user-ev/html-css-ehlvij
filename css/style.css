@@ -612,6 +612,7 @@ section.intro {
 
     .product-img-small-previews {
         width:90px;
+        height:auto;
         display:flex;
         flex-direction:column;
         gap:10px;
@@ -986,10 +987,26 @@ main.main-base {
     padding:60px 20px 195px 20px;
 }
 
+
+
     .product-single,
     .cart,
     .cart-complete {
         grid-template-columns: 1fr;
+    }
+
+    .product-single-visual {
+        flex-direction: column-reverse;
+    }
+
+    .product-photo-large,
+    .product-img-small-previews {
+        width:100%;
+    }
+
+    .product-img-small-previews {
+        height:90px;
+        flex-direction:row;
     }
     
 }
