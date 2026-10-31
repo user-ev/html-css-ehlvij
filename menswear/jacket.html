@@ -46,7 +46,7 @@
             /
             <a href="../menswear.html">Jackets</a>
             /
-            <a href="/">Fleece jacket</a>
+            <a href="jacket.html">Fleece jacket</a>
         </div>
 
         <section class="product-single">
@@ -73,23 +73,74 @@
 
                 <p class="price">799,-</p>
 
-                Colour:
+                <p>Colour:</p>
+                <!--
                 <div class="product-colors">
                     <div class="pc pc-lightgreen"></div>
                     <div class="pc pc-olive selected"></div>
                     <div class="pc pc-blue"></div>
                     <div class="pc pc-red"></div>
+                </div> -->
+
+                <form class="product-colors">
+                    <label class="color-option">
+                        <input type="radio" name="color" />
+                        <div class="pc pc-lightgreen"></div>
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="color" checked />
+                        <div class="pc pc-olive"></div>
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="color" />
+                        <div class="pc pc-blue"></div>
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="color" />
+                        <div class="pc pc-red"></div>
+                    </label>
+                </form>
+
+                <a class="size-chart" href="#">Size chart</a>
+
+                <p>Size:</p>
+                <form class="product-size">
+                    <label class="size-option">
+                        <input type="radio" name="size" />
+                        <span>XS</span>
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" checked />
+                        <span>S</span>
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" disabled />
+                        <span title="sold out">M</span>
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" disabled />
+                        <span title="sold out">L</span>
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" />
+                        <span>XL</span>
+                    </label>
+                </form>
+
+                <div class="product-single-buttons">
+                    <a class="button button-cart" href="../cart.html">Add to cart</a>
+
+                    <a class="button-icon" href="#" title="add to wishlist">
+                        <i class="ti ti-heart"></i>
+                    </a>
                 </div>
-
-                Size:
-                <div class="product-size">
-                    XS S M L XL
-                </div>
-
-                <a href="#">Size chart</a>
-
-                <a class="button button-cart" href="../cart.html">Add to cart</a>
-                <a href="#"><i class="ti ti-heart"></i></a>
 
                 <p>Free shipping over 2 000 kr.</p>
 
