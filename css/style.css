@@ -115,6 +115,16 @@ button,
     width:100%;
 }
 
+.text-center {
+    margin:40px auto;
+    max-width:min(50vw, 720px);
+    min-width:500px;
+}
+
+    .text-center h1 {
+        text-align:center;
+    }
+
 /* interactive / hover states */ 
 .int {
     transition:ease 0.5s;
@@ -237,6 +247,7 @@ main {
 
 main.main-base {
     max-width:1440px;
+    min-height:50vh;
     padding:60px 60px 195px 60px;
 }
 
@@ -396,12 +407,6 @@ section.intro {
         background-repeat:no-repeat;
     }
 
-    .listing-hero-text {
-        margin:40px auto;
-        max-width:min(50vw, 720px);
-        min-width:500px;
-    }
-
 /* section products-listing */
 .products-listing {
     position:relative;
@@ -456,6 +461,10 @@ section.intro {
                 align-items:center;
                 justify-content: flex-start;
                 gap:10px;
+            }
+
+            .expand-block-content .product-size {
+                max-width:260px;
             }
 /*
             .filter-option input[type=checkbox] {
@@ -674,15 +683,17 @@ section.intro {
 
 .product-size {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     gap:10px;
 }
+    .filters input[type="checkbox"],
     .product-colors input[type="radio"],
     .product-size input[type="radio"] {
         display:none;
     }
 
-    .product-colors input[type="radio"]:checked + .pc {
+    .product-colors input:checked + .pc {
         outline:1px solid var(--hex-text);
     }
 
@@ -698,20 +709,20 @@ section.intro {
         cursor:pointer;
     }
 
-        .product-size input[type="radio"]:hover + span,
-        .product-size input[type="radio"]:checked + span {
+        .product-size input:hover + span,
+        .product-size input:checked + span {
             background-color:var(--hex-green);
             border:1px solid var(--hex-text);
             font-weight:700;
         }
 
-        .product-size input[type="radio"]:disabled:hover + span {
+        .product-size input:disabled:hover + span {
             background-color:var(--hex-dark-beige);
             border:1px solid var(--hex-border);
             font-weight:400;
         }
 
-        .product-size input[type="radio"]:disabled + span {
+        .product-size input:disabled + span {
             opacity:0.3;
             cursor:not-allowed;
         }

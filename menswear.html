@@ -42,7 +42,7 @@
         <section class="listing-hero">
             <div class="listing-hero-img"></div>
 
-            <div class="listing-hero-text">
+            <div class="text-center">
                 <h1>Men&rsquo;s outdoor clothing</h1>
                 <p>With our large collection of men’s outdoor clothing, you can find the
     right gear for any type of adventure in the wilderness.</p>
@@ -87,14 +87,37 @@
                     Colour
                 </summary>
                 <div class="expand-block-content">
-                    <div class="product-colors">
-                        <div class="pc pc-black"></div>
-                        <div class="pc pc-white"></div>
-                        <div class="pc pc-green"></div>
-                        <div class="pc pc-blue"></div>
-                        <div class="pc pc-red"></div>
-                        <div class="pc pc-yellow"></div>
-                    </div>
+                    <form class="product-colors">
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-black"></div>
+                        </label>
+
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-white"></div>
+                        </label>
+
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-green"></div>
+                        </label>
+
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-blue"></div>
+                        </label>
+
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-red"></div>
+                        </label>
+
+                        <label class="color-option">
+                            <input type="checkbox" name="color" />
+                            <div class="pc pc-yellow"></div>
+                        </label>
+                    </form>
                 </div>
             </details>
 
@@ -104,30 +127,32 @@
                     Size
                 </summary>
                 <div class="expand-block-content">
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-xs" value="extra-small" id="size-xs" />
-                        <label for="size-xs">Extra Small</label>
-                    </div>
+                    <form class="product-size">
+                        <label class="size-option">
+                            <input type="checkbox" name="size" />
+                            <span>XS</span>
+                        </label>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-s" value="small" id="size-s" />
-                        <label for="size-s">Small</label>
-                    </div>
+                        <label class="size-option">
+                            <input type="checkbox" name="size" />
+                            <span>S</span>
+                        </label>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-m" value="medium" id="size-m" />
-                        <label for="size-m">Medium</label>
-                    </div>
+                        <label class="size-option">
+                            <input type="checkbox" name="size" />
+                            <span title="sold out">M</span>
+                        </label>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-l" value="large" id="size-l" />
-                        <label for="size-l">Large</label>
-                    </div>
+                        <label class="size-option">
+                            <input type="checkbox" name="size" />
+                            <span title="sold out">L</span>
+                        </label>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-xl" value="extra-large" id="size-xl" />
-                        <label for="size-xl">Extra Large</label>
-                    </div>
+                        <label class="size-option">
+                            <input type="checkbox" name="size" />
+                            <span>XL</span>
+                        </label>
+                    </form>
                 </div>
             </details>
 
