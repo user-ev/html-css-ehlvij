@@ -764,7 +764,7 @@ section.intro {
     gap:10px;
 }
 
-    .button-cart {
+    .product-single-buttons .button-cart {
         width:calc(100% - 53px);
     }
 
@@ -1145,6 +1145,7 @@ footer::before {
 
     .product-single-visual {
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     .product-photo-large,
@@ -1176,6 +1177,9 @@ footer::before {
 }
 
 @media only screen and (max-width: 768px) {
+    main.main-base {
+        padding:60px 20px 195px 20px;
+    }
     .blogpost-container {
         flex-direction: column;
     }
@@ -1243,7 +1247,7 @@ section.intro {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .product-colors {
+    .product .product-colors {
         justify-content:center;
     }
 
