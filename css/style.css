@@ -1164,7 +1164,41 @@ footer::before {
 
 /* mobile */
 @media screen and (max-width: 600px) {
-    .listing-hero-text {
+section.intro {
+    flex-direction:column;
+    height:auto;
+}
+
+    .intro > * {
+        width:100vw;
+    }
+
+    .intro-img {
+        padding:80px 0px;
+    }
+
+    .intro-text {
+        position:relative;
+        padding:20px 20px 150px 20px;
+    }
+
+        .intro-text::before {
+            content: '';
+            position: absolute;
+            top: -35px;
+            left: 0px;
+            height: 35px;
+            width: 100%;
+            background-position: top center;
+            background-image:url('../vectors/intro-text-mobile.svg');
+            background-size: max(100%, 410px) 35px;
+        }
+
+        .intro-text .button {
+            margin:auto;
+        }
+
+    .text-center {
         min-width:80vw;
     }
     .products-listing {
