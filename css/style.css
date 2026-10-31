@@ -261,7 +261,7 @@ footer {
 section.intro {
     display: flex;
     align-items: center;
-    padding:0px 0px 50px 0px;
+    padding:0px 0px 0px 0px;
     height:700px;
 }
 
@@ -272,13 +272,15 @@ section.intro {
     .intro-img {
         height:100%;
         padding-left:max(0px, calc(50% - 720px));
+        padding-bottom:150px;
         display:flex;
         align-items:center;
         justify-content:center;
         background: repeating-linear-gradient(to right, var(--hex-blue-light), var(--hex-blue-light) 20px, var(--hex-beige) 20px, var(--hex-beige) 40px);
     }
 
-    .intro-img img {
+    .intro-img img,
+    .intro-img-raindrops {
         position:relative;
         aspect-ratio: 1/1;
         width:460px;
@@ -288,11 +290,15 @@ section.intro {
         outline:10px solid var(--hex-blue-light);
     }
 
-        .intro-img-raindrops::before {
+    .intro-img-raindrops {
+        position:absolute;
+        outline:none;
+    }
+
+        .intro-img-raindrops::before,
+        .intro-img-raindrops::after {
             content:'';
             position: absolute;
-            top:-18px;
-            right:-30px;
             width:100px;
             height:118px;
             background-image: url('../vectors/raindrops.svg');
@@ -300,12 +306,22 @@ section.intro {
             background-size: cover;
         }
 
+        .intro-img-raindrops::before {
+            top:-18px;
+            right:-30px;
+        }
+
+        .intro-img-raindrops::after {
+            bottom:-18px;
+            left:-30px;
+        }
+
     .intro-text {
         max-width:720px;
         display:flex;
         flex-direction:column;
         gap:10px;
-        padding:0px 100px 0px 50px;
+        padding:0px 100px 150px 50px;
     }
 
 /* section: new arrivals */
