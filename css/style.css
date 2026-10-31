@@ -320,9 +320,11 @@ section.intro {
         max-width:720px;
         display:flex;
         flex-direction:column;
-        gap:10px;
+        gap:20px;
         padding:0px 100px 150px 50px;
     }
+
+        .intro-text h1 {margin:0;}
 
 /* section: new arrivals */
 .new-arrivals {
