@@ -79,32 +79,25 @@
                 <p class="price">799,-</p>
 
                 <p>Colour:</p>
-                <!--
-                <div class="product-colors">
-                    <div class="pc pc-lightgreen"></div>
-                    <div class="pc pc-olive selected"></div>
-                    <div class="pc pc-blue"></div>
-                    <div class="pc pc-red"></div>
-                </div> -->
 
                 <form class="product-colors">
-                    <label class="color-option">
-                        <input type="radio" name="color" />
+                    <label class="color-option" for="pc-lightgreen">
+                        <input type="radio" name="color" value="light green" id="pc-lightgreen" />
                         <div class="pc pc-lightgreen"></div>
                     </label>
 
-                    <label class="color-option">
-                        <input type="radio" name="color" checked />
+                    <label class="color-option" for="pc-olive">
+                        <input type="radio" name="color" checked value="olive" id="pc-olive" />
                         <div class="pc pc-olive"></div>
                     </label>
 
-                    <label class="color-option">
-                        <input type="radio" name="color" />
+                    <label class="color-option" for="pc-blue">
+                        <input type="radio" name="color" value="blue" id="pc-blue" />
                         <div class="pc pc-blue"></div>
                     </label>
 
-                    <label class="color-option">
-                        <input type="radio" name="color" />
+                    <label class="color-option" for="pc-red">
+                        <input type="radio" name="color" value="red" id="pc-red" />
                         <div class="pc pc-red"></div>
                     </label>
                 </form>
@@ -113,28 +106,28 @@
 
                 <p>Size:</p>
                 <form class="product-size">
-                    <label class="size-option">
-                        <input type="radio" name="size" />
+                    <label class="size-option" for="size-xs">
+                        <input type="radio" name="size" id="size-xs" value="extra small" />
                         <span>XS</span>
                     </label>
 
-                    <label class="size-option">
-                        <input type="radio" name="size" checked />
+                    <label class="size-option" for="size-s">
+                        <input type="radio" name="size" checked id="size-s" value="small" />
                         <span>S</span>
                     </label>
 
-                    <label class="size-option">
-                        <input type="radio" name="size" disabled />
+                    <label class="size-option" for="size-m">
+                        <input type="radio" name="size" disabled id="size-m" value="medium" />
                         <span title="sold out">M</span>
                     </label>
 
-                    <label class="size-option">
-                        <input type="radio" name="size" disabled />
+                    <label class="size-option" for="size-l">
+                        <input type="radio" name="size" disabled id="size-l" value="large" />
                         <span title="sold out">L</span>
                     </label>
 
-                    <label class="size-option">
-                        <input type="radio" name="size" />
+                    <label class="size-option" for="size-xl">
+                        <input type="radio" name="size" id="size-xl" value="extra large" />
                         <span>XL</span>
                     </label>
                 </form>
