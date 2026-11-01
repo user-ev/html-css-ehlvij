@@ -497,23 +497,6 @@ section.intro {
             .expand-block-content .product-size {
                 max-width:260px;
             }
-/*
-            .filter-option input[type=checkbox] {
-                position:absolute;
-                opacity:0;
-                margin:0;
-                padding:0;
-            }
-
-            .filter-option input[type=checkbox]::before {
-                content:'\eb2c';
-                font-family:tabler-icons;
-                display:inline-block;
-            }
-
-            .filter-option input[type=checkbox]:checked::before {
-                content:'\eb28';
-            } */
 
 
 .products-container {
@@ -722,6 +705,27 @@ section.intro {
     .product-colors input[type="radio"],
     .product-size input[type="radio"] {
         display:none;
+    }
+
+    .product-category {
+        display:flex;
+        flex-direction: column;
+    }
+
+        .product-category label {
+            cursor:pointer;
+        }
+
+    .product-category input + span::before {
+        content:'\eb2c';
+        font-family:tabler-icons;
+        margin-right:10px;
+    }
+
+    .product-category input:checked + span::before {
+        content:'\eb28';
+        font-family:tabler-icons;
+        margin-right:10px;
     }
 
     .product-colors input:checked + .pc {
@@ -1237,10 +1241,6 @@ section.intro {
             background: transparent;
             height: 0px;
         }
-    
-.disable-scrollbars {
-  
-}
 
         .new-arrivals-slider .product {
             min-width:250px;

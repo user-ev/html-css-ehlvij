@@ -58,122 +58,110 @@
             <!-- filters -->
             <aside class="filters">
 
-            <!-- categories -->
-            <details class="expand-block">
-                <summary class="expand-block-header">
-                    Categories
-                </summary>
-                <div class="expand-block-content">
-                    <div class="filter-option">
-                        <input type="checkbox" name="cat-tops" value="tops" id="cat-tops" checked />
-                        <label for="cat-tops">Tops</label>
+                <!-- categories -->
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Categories
+                    </summary>
+                    <div class="expand-block-content">
+                        <form class="product-category">
+                            <label class="category-option" for="tops">
+                                <input type="checkbox" name="category" value="tops" id="tops" checked />
+                                <span>Tops</span>
+                            </label>
+
+                            <label class="category-option" for="bottoms">
+                                <input type="checkbox" name="category" value="bottoms" id="bottoms" />
+                                <span>Bottoms</span>
+                            </label>
+
+                            <label class="category-option" for="outerwear">
+                                <input type="checkbox" name="category" value="outerwear" id="outerwear" />
+                                <span>Outerwear</span>
+                            </label>
+
+                            <label class="category-option" for="shoes">
+                                <input type="checkbox" name="category" value="shoes" id="shoes" />
+                                <span>Shoes</span>
+                            </label>
+                        </form>
                     </div>
+                </details>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="cat-bottoms" value="bottoms" id="cat-bottoms" />
-                        <label for="cat-bottoms">Bottoms</label>
+                <!-- colour -->
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Colour
+                    </summary>
+                    <div class="expand-block-content">
+                        <form class="product-colors">
+                            <label class="color-option" for="pc-black">
+                                <input type="checkbox" name="color" value="black" id="pc-black" />
+                                <div class="pc pc-black"></div>
+                            </label>
+
+                            <label class="color-option" for="pc-white">
+                                <input type="checkbox" name="color" value="white" id="pc-white" />
+                                <div class="pc pc-white"></div>
+                            </label>
+
+                            <label class="color-option" for="pc-green">
+                                <input type="checkbox" name="color" value="green" id="pc-green" />
+                                <div class="pc pc-green"></div>
+                            </label>
+
+                            <label class="color-option" for="pc-blue">
+                                <input type="checkbox" name="color" value="blue" id="pc-blue" />
+                                <div class="pc pc-blue"></div>
+                            </label>
+
+                            <label class="color-option" for="pc-red">
+                                <input type="checkbox" name="color" value="red" id="pc-red" />
+                                <div class="pc pc-red"></div>
+                            </label>
+
+                            <label class="color-option" for="pc-yellow">
+                                <input type="checkbox" name="color" value="yellow" id="pc-yellow" />
+                                <div class="pc pc-yellow"></div>
+                            </label>
+                        </form>
                     </div>
+                </details>
 
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-m" value="medium" id="size-m" />
-                        <label for="size-m">Outerwear</label>
+                <!-- size -->
+                <details class="expand-block">
+                    <summary class="expand-block-header">
+                        Size
+                    </summary>
+                    <div class="expand-block-content">
+                        <form class="product-size">
+                            <label class="size-option" for="xs">
+                                <input type="checkbox" name="size" value="extra small" id="xs" />
+                                <span>XS</span>
+                            </label>
+
+                            <label class="size-option" for="s">
+                                <input type="checkbox" name="size" value="small" id="s" />
+                                <span>S</span>
+                            </label>
+
+                            <label class="size-option" for="m">
+                                <input type="checkbox" name="size" value="medium" id="m" />
+                                <span>M</span>
+                            </label>
+
+                            <label class="size-option" for="l">
+                                <input type="checkbox" name="size" value="large" id="l" />
+                                <span>L</span>
+                            </label>
+
+                            <label class="size-option" for="xl">
+                                <input type="checkbox" name="size" value="extra large" id="xl" />
+                                <span>XL</span>
+                            </label>
+                        </form>
                     </div>
-
-                    <div class="filter-option">
-                        <input type="checkbox" name="size-l" value="large" id="size-l" />
-                        <label for="size-l">Shoes</label>
-                    </div>
-                </div>
-            </details>
-
-            <!-- colour -->
-            <details class="expand-block">
-                <summary class="expand-block-header">
-                    Colour
-                </summary>
-                <div class="expand-block-content">
-                    <form class="product-colors">
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-black"></div>
-                        </label>
-
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-white"></div>
-                        </label>
-
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-green"></div>
-                        </label>
-
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-blue"></div>
-                        </label>
-
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-red"></div>
-                        </label>
-
-                        <label class="color-option">
-                            <input type="checkbox" name="color" />
-                            <div class="pc pc-yellow"></div>
-                        </label>
-                    </form>
-                </div>
-            </details>
-
-            <!-- size -->
-            <details class="expand-block">
-                <summary class="expand-block-header">
-                    Size
-                </summary>
-                <div class="expand-block-content">
-                    <form class="product-size">
-                        <label class="size-option">
-                            <input type="checkbox" name="size" />
-                            <span>XS</span>
-                        </label>
-
-                        <label class="size-option">
-                            <input type="checkbox" name="size" />
-                            <span>S</span>
-                        </label>
-
-                        <label class="size-option">
-                            <input type="checkbox" name="size" />
-                            <span title="sold out">M</span>
-                        </label>
-
-                        <label class="size-option">
-                            <input type="checkbox" name="size" />
-                            <span title="sold out">L</span>
-                        </label>
-
-                        <label class="size-option">
-                            <input type="checkbox" name="size" />
-                            <span>XL</span>
-                        </label>
-                    </form>
-                </div>
-            </details>
-
-            <!-- price -->
-            <details class="expand-block">
-                <summary class="expand-block-header">
-                    Price
-                </summary>
-                <div class="expand-block-content">
-                    <div class="filter-option">
-                        <label for="volume">Max price</label>
-                        <input type="range" id="price" name="price" min="0" max="11" />
-                    </div>
-                </div>
-            </details>
-
+                </details>
             </aside>
 
             <div class="products-rightside">
