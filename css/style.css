@@ -680,6 +680,17 @@ section.intro {
         gap:10px;
     }
 
+        .product-img-small {padding:5px;}
+        .product-img-small:last-of-type {
+            padding:0px;
+            overflow:hidden;
+        }
+
+            .product-img-small:hover img,
+            .product-photo-large:hover img {
+                transform: scale(1,1);
+            }
+
         .product-photo-large {
             width:calc(100% - 100px);
         }
